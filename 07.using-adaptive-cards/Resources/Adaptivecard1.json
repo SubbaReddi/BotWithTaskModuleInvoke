@@ -1,0 +1,25 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Sample adaptive card which is to open task module",
+      "weight": "bolder",
+      "isSubtle": false
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "btn1",
+      "title": "Open Task Module",
+      "data": {
+        "msteams": {
+          "type": "task/fetch"
+        }
+      }
+    }
+  ]
+}
